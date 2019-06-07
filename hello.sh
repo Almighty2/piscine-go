@@ -1,2 +1,2 @@
 #! /bin/bash	
-echo "Hello Almighty2"
+echo "Hello Almighty2!"
