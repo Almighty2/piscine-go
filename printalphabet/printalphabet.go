@@ -1,4 +1,4 @@
-package printalphabet
+package main
 
 func main()  {
 	print("abcdefghijklmnopqrstuvwxyz\n")
