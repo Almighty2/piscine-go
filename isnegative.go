@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	IsNegative(1)
@@ -11,8 +13,8 @@ func main() {
 func IsNegative(nb int) {
 
 	if nb < 0 {
-		fmt.print("T\n")
+		fmt.Print("T\n")
 	} else {
-		fmt.print("F\n")
+		fmt.Print("F\n")
 	}
 }
