@@ -1,12 +1,8 @@
-package main
+package piscine
 
 import "fmt"
 
-func main() {
-	IsNegative(1)
-	IsNegative(0)
-	IsNegative(-1)
-}
+
 
 func IsNegative(nb int) {
 
