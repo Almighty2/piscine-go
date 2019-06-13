@@ -1,4 +1,5 @@
 package piscine
+
 func IsPrime(nb int) bool{
 	decision:=true
 	if nb<=1{
