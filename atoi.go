@@ -52,4 +52,3 @@ func AToi(s string) int{
 	}
 	return entier
 }
-© 2019 GitHub, Inc.
