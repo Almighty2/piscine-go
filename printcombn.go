@@ -34,4 +34,3 @@ func PrintCombN(n int)  {
 		}
 	}
 }
-© 2019 GitHub, Inc.
