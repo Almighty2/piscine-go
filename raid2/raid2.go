@@ -24,10 +24,10 @@ func main() {
 		if backtrack(&board) {
 			printBoard(board)
 		} else {
-			fmt.Printf("Le Sudoku ne peut être résolu.")
+			fmt.Printf("The Sudoku can't be solved.")
 		}
 	}else{
-		fmt.Println("Erreur")
+		fmt.Println("Error")
 	}
 
 
