@@ -1,4 +1,4 @@
-package main
+package piscine
 
 import (
 	"bufio"
@@ -24,7 +24,7 @@ func main() {
 		if backtrack(&board) {
 			printBoard(board)
 		} else {
-			fmt.Printf("The Sudoku can't be solved.")
+			fmt.Printf("The Sudoku can't be solved .")
 		}
 	}else{
 		fmt.Println("Error")
