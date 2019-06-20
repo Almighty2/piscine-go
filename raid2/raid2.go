@@ -1,4 +1,4 @@
-package piscine
+package main
 
 import (
 	"bufio"
@@ -10,17 +10,24 @@ import (
 
 func main() {
 
+	good:=true
 	param:=strings.Join(os.Args[1:],"")
+	for i:=1;i<len(os.Args[1:]);i++{
+		if len(os.Args[i])!=9{
+			good=false
+			break
+		}
+	}
 
-	if iscorrectparam(param){
+	if iscorrectparam(param) && good{
 		board := parseInput(param)
 		if backtrack(&board) {
 			printBoard(board)
 		} else {
-			fmt.Printf("The Sudoku can't be solved.")
+			fmt.Printf("Le Sudoku ne peut être résolu.")
 		}
 	}else{
-		fmt.Println("Error")
+		fmt.Println("Erreur")
 	}
 
 
@@ -119,7 +126,12 @@ func hasDuplicates(counter [10]int) bool {
 func printBoard(board [9][9]int) {
 	for row := 0; row < 9; row++ {
 		for col := 0; col < 9; col++ {
-			fmt.Printf("%d ", board[row][col])
+			if col!=8{
+				fmt.Printf("%d ", board[row][col])
+			}else{
+				fmt.Printf("%d", board[row][col])
+			}
+
 		}
 		if row == 2 || row == 5 || row == 8 {
 			fmt.Print("\n")
